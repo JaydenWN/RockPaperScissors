@@ -4,28 +4,30 @@ let computerChoice;
 let getComputerChoice= (()=>{
    let randNum = Math.floor(Math.random(3) * 3)
    if(randNum === 0){
+    computerChoice = 'Rock'
     computerChoice = 'rock'
    }else  if(randNum === 1){
+    computerChoice = 'Paper'
     computerChoice = 'paper'
    }else{
+    computerChoice = 'Scissors'
     computerChoice = 'scissors'
    }
 })();
 
 console.log(computerChoice)
+
 // Get users choice
 let userChoice = window.prompt('What is your choice, Rock | Paper | Scissors').toLowerCase()
 
-console.log(userChoice)
+console.log(typeof userChoice)
 
 // Decide who wins
 
 function playGame(compChoice, useChoice){
-    if(userChoice != 'rock' | 'paper' | 'scissors'){
+    if(userChoice !== 'rock' && userChoice !== 'paper' && userChoice !== 'scissors' ){
         return window.alert('Invalid Input')
-    }
-
-    if(computerChoice === userChoice){
+    }else if(computerChoice === userChoice){
         return 'Its a draw'
     }else if(computerChoice === 'rock' && userChoice ==='scissors'){
         return 'You loose'
@@ -36,7 +38,7 @@ function playGame(compChoice, useChoice){
     }else{
         return 'You Win'
     }
-    
+
 }
 
 console.log(playGame(computerChoice, userChoice))
