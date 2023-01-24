@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#compSelectSq{
+    max-width: 10em;
+    align-self: center;
+}
+.selectSq{
+    display: inline-flex;
+    border: 2px black solid;
+    border-radius: 5px;
+    min-width: 10em;
+    min-height: 10em;
+    align-items: center;
+    justify-content: center;
+}
+#playerPanel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20em
+}
+#scorePanel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+#scorePannel p{
+    display: inline;
+}
