@@ -6,28 +6,40 @@ body{
 #compSelectSq{
     max-width: 10em;
     align-self: center;
+    display: inline-flex;
+    border: 2px black solid;
+    border-radius: 5px;
+    min-width: 15em;
+    min-height: 15em;
+    align-items: center;
+    justify-content: center;
 }
 .selectSq{
     display: inline-flex;
     border: 2px black solid;
     border-radius: 5px;
-    min-width: 10em;
-    min-height: 10em;
+    min-width: 15em;
+    min-height: 15em;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 #playerPanel{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0 20em
+    justify-content: center;
+    gap: 2em;
 }
 #scorePanel{
+    min-height: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
 }
-#scorePannel p{
-    display: inline;
+
+#scorePanel h1{
+    min-width: 5em;
+    text-align: center;
 }
