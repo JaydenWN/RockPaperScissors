@@ -5,9 +5,6 @@ let score = [0,0]
 let compScoreDisp = document.querySelector('#pcScore')
 let playerScoreDisp = document.querySelector('#playerScore')
 
-// Get how many rounds to play
-// let chosenRounds = parseInt(window.prompt('How many rounds would you like to play?'))
-
 // Get Computers Choice
 let computerChoice;
 
@@ -70,25 +67,3 @@ userSelectSq.forEach(ele =>{
         
     })
 })
-
-
-// Lets user set how many rounds to play, if a string return invalid input.
-
-// function game(numRounds){
-//     if(chosenRounds > 0){
-//         userChoice = window.prompt('What is your choice, Rock | Paper | Scissors').toLowerCase()
-//         for(let i = 0; i < numRounds; i++){
-//             console.log(playGame(computerChoice, userChoice))
-//             getComputerChoice()
-//             if(i < numRounds - 1){
-//                 userChoice = window.prompt('What is your choice, Rock | Paper | Scissors').toLowerCase()
-//             }
-            
-//         }
-//     }else{
-//         console.log('Invalid input. Please type a number')
-//     }
-    
-// }
-
-game(chosenRounds)
